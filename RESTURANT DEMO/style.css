@@ -83,6 +83,43 @@ nav ul li a:hover{
 
 /* header ends */
 
+/* banner starts */
+
+#banner-section{
+    background-image: url("images/resturant.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-contents h1{
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background: rgba(255,255,0,0.884);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+}
+
+.banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background: rgb(0,128,0);
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+
+}
+
+/* banner ends */
+
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px){
 
