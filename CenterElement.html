@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering elements</title>
+    <style>
+        .main{
+            width: 80%;
+            margin: 0 auto;
+            /* text-align: center; */
+            background-color: pink;
+            height: 400px;
+            position: relative;
+            
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        } 
+        /* h1{
+            width: 200px;
+            margin: 0 auto;
+        } */
+        .desc{
+            background-color: green;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- <h1>Bangladesh</h1> -->
+        <div class="desc">
+            <h3>Sylhet</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, quas. Minima expedita quod eius minus ullam animi consequuntur similique iusto?</p>
+        </div>
+    </div>
+</body>
+</html>

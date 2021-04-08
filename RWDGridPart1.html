@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+        .nav-menu{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+        }
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+
+        }
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+        }
+        .aside{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        [class*="col-"]{
+                width: 100%;
+            }
+        /* For desktop */
+        /* .col-1{width: 8.33%}
+        .col-2{width: 16.66%}
+        .col-3{width: 25%}
+        .col-4{width: 33.33%}
+        .col-5{width: 41.66%}
+        .col-6{width: 50%}
+        .col-7{width: 58.33%}
+        .col-8{width: 66.66%}
+        .col-9{width: 75%}
+        .col-10{width: 83.33%}
+        .col-11{width: 91.66%}
+        .col-12{width: 100%} */
+
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        @media screen and ( /*max-width*/ min-width:768px) {
+            /* [class*="col-"]{
+                width: 100%;
+            } */
+             /* For desktop */
+            .col-1{width: 8.33%}
+            .col-2{width: 16.66%}
+            .col-3{width: 25%}
+            .col-4{width: 33.33%}
+            .col-5{width: 41.66%}
+            .col-6{width: 50%}
+            .col-7{width: 58.33%}
+            .col-8{width: 66.66%}
+            .col-9{width: 75%}
+            .col-10{width: 83.33%}
+            .col-11{width: 91.66%}
+            .col-12{width: 100%}
+
+            /* .nav-menu a{
+                text-align: center;
+                background-color: aqua;
+                margin: 10px;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Anisul Islam</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a> 
+            <a href="#">Tutorial</a> 
+            <a href="#">Contact</a> 
+        </div>
+        <div class="main col-7">
+            <h1>I am a web designer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consequatur modi iusto ratione possimus itaque distinctio temporibus consectetur voluptatem ad.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, eaque facilis culpa numquam illo, ad temporibus ducimus aliquid, at minima dolor omnis maiores eos? Qui consectetur ab aliquid magnam nobis repudiandae quod similique exercitationem id repellendus aperiam, asperiores, praesentium suscipit recusandae officiis ratione, neque et voluptates eligendi repellat? Ab veritatis non consequuntur ut, incidunt ullam adipisci saepe id sint quam error in reprehenderit sed iste vitae blanditiis beatae architecto rerum quae suscipit nulla, magni optio ipsam fugiat. Quidem dignissimos, quisquam repudiandae quam sint veritatis nulla sunt maiores in! Id assumenda eaque dolore quidem voluptates et omnis placeat atque, excepturi fugiat optio qui minus. Aut eveniet repellat nihil quibusdam voluptatum temporibus earum sunt id molestias molestiae repellendus dolor, magnam natus omnis commodi excepturi cumque? Cum quo temporibus dicta sed natus expedita dolorum ratione, ab, dolores eligendi laborum enim quidem nihil perspiciatis incidunt assumenda optio accusamus corporis esse. Vero voluptatum vel aliquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, recusandae voluptates. Unde ea nobis facere cumque eligendi rerum adipisci, molestiae numquam eveniet explicabo. Nobis quibusdam, eveniet perspiciatis quaerat eum porro!</p>
+
+        </div>
+        <div class="aside col-3">
+            <h2>what I love?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reprehenderit aperiam dolor omnis, officiis quidem culpa excepturi id quibusdam ipsa assumenda tenetur laboriosam ex odit dolorum unde. Mollitia, alias eligendi?</p>
+            <h2>what I do?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis blanditiis provident est, temporibus autem, quas quos incidunt adipisci excepturi, libero consectetur tempore itaque repellendus ratione ipsum vel officiis consequuntur nemo.</p>
+            <h2>what I don't love?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae perferendis doloremque, minus non voluptates, iste minima corrupti debitis recusandae inventore dolore sint? Similique, aliquid est odit et exercitationem perferendis. Hic?</p>
+            <h2>what I don't do?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laborum voluptatibus id eveniet facilis aspernatur eligendi praesentium aut voluptas! Hic, suscipit! Eligendi, sequi. In, eveniet. Sit nihil architecto provident pariatur.</p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Study with Anis 2020. Developed By Anisul Islam.
+    </div>
+</body>
+</html>

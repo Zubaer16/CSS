@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Tooltip</title>
+    <style>
+        div{
+            height:100px;
+            width: 250px;
+            background-color: green ;
+            border:1px solid red;
+            overflow: auto;
+             
+        }
+        .tooltip{
+
+            position: relative;
+        }
+        .tooltip .tooltip-text{
+            visibility: hidden;
+            width: 150px;
+            background-color: indigo;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#" class="tooltip">
+        Facebook
+        <span class="tooltip-text">Facebook is a social media</span>
+    </a>
+    <br><br>
+    <div>
+        No sit consetetur dolor lorem takimata consetetur clita vero ipsum, stet sit dolores eirmod erat et et, sed magna sit at dolor et dolor no sea. Erat ut magna lorem ea amet voluptua eos, accusam clita sit duo vero magna justo aliquyam. Stet lorem aliquyam sit no at aliquyam et.
+    </div>
+</body>
+</html>
