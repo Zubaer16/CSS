@@ -201,6 +201,67 @@ nav ul li a:hover{
 
 /* food menu ends */
 
+/* contact starts */
+
+#contact{
+    padding: 1%;
+    background: #595b83;
+}
+
+.map{
+    width: 100%;
+    height: 250px;
+}
+
+.contact-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0 ;
+}
+
+.contact-details p, address{
+    font-size: 0.8rem;
+}
+
+/* contact ends */
+
+
+/* footer starts */
+footer{
+    padding: 1%;
+    color: white;
+    background: #060930;
+}
+
+footer p{
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+
+}
+
+.social-menus{
+    text-align: center;
+}
+
+.icon-style{
+    color: white;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 10px;
+    transition: .4s;
+    text-align: center;
+}
+
+.icon-style:hover{
+    background-color: grey;
+    transform: scale(1.2);
+}    
+/* footer ends */
+
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px){
 
@@ -246,6 +307,57 @@ nav ul li a:hover{
 
 /* Small devices (portrait tablets and large phones, 992px and up) */
 @media (min-width: 992px){
+
+    .logo-div{
+        text-align: left;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+        display: inline-block;
+        transition: .4s;
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+        transform: scale(1.2);
+        text-decoration: underline;
+        border-radius: 0;
+    }
+
+    /* banner start */
+    #banner-section{
+        position: relative;
+        height: 100vh;
+
+    }
+
+    .banner-contents{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .banner-contents h1{
+        width: 700px;
+        font-size: 3.5rem;
+    }
+    .banner-contents p{
+        width: 500px;
+        font-size: 2rem;
+    }
+    /* banner end */
+
+    /* footer start */
+    
+    /* footer end */
+
 
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
