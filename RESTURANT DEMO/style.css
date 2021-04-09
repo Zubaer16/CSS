@@ -355,7 +355,13 @@ footer p{
     /* banner end */
 
     /* footer start */
-    
+    footer p{
+        text-align: left;
+    }
+
+    .social-menus{
+        text-align: right;
+    }
     /* footer end */
 
 
