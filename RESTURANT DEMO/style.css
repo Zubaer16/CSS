@@ -118,7 +118,88 @@ nav ul li a:hover{
 
 }
 
+.btn{
+
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background: rgb(0,128,0);
+    text-transform: uppercase;
+    color: white;
+    transition: .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
 /* banner ends */
+
+/* about starts */
+#about-us{
+    padding: 1%;
+}
+
+.about-us-contents{
+    text-align: center;
+}
+
+.about-us-contents h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.about-us-contents h3 p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    
+}
+/* about ends */
+
+/* food menu starts */
+
+#menu-section{
+    padding: 1%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-desc{
+    background: rgb(165,164,164);
+}
+
+.item-name{
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+.item-desc > p {
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card{
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+/* food menu ends */
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px){
